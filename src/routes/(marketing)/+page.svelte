@@ -278,64 +278,62 @@
       <div
         class="flex flex-col lg:flex-row mt-8 gap-6 place-content-center content-center"
       >
-        <div class="min-w-[270px] lg:min-w-[420px] flex mt-6 lg:mt-0">
-          <div class="my-auto">
-            <div class="px-4 text-lg md:text-xl">
-              <a href="https://tpgstudios.art" class="" target="_blank">
-                An e-commerce platform offering
-                <span class="font-bold whitespace-nowrap"
-                  >seamless shopping experiences</span
-                >,
-                <span class="underline decoration-secondary decoration-[3px]"
-                  >real-time updates</span
-                >, and secure payments.
-              </a>
-            </div>
-            <div class="px-4 mt-6 text-lg md:text-xl">
-              Our <a
-                href="https://tpgstudios.art"
-                class="link font-bold"
-                target="_blank">webpage</a
-              >
-              is the best example of an e-commerce platform with style and real content.
-            </div>
-            <div class="mt-4 text-large">
-              <a href="https://tpgstudios.art" target="_blank">
-                <button class="btn btn-primary btn-wide mt-3"
-                  >See it in Action</button
-                >
-              </a>
-            </div>
-          </div>
-        </div>
         <div class="hidden md:block">
-          <a href="https://tpgstudios.art" target="_blank" class="link">
+          <a href="https://graysoncrozier.com" target="_blank" class="link">
             <div class="mockup-browser border">
               <div class="mockup-browser-toolbar">
                 <div class="input" style="background:#eee;">
-                  https://tpgstudios.art
+                  https://graysoncrozier.com
                 </div>
               </div>
               <div class="flex justify-center">
                 <img
                   alt="Screenshot of sculpta.art homepage"
                   class="aspect-[16/9]"
-                  src="/images/tpg-studios.png"
+                  src="/images/portfolio.png"
                 />
               </div>
             </div>
           </a>
         </div>
         <div class="md:hidden">
-          <a href="https://tpgstudios.art" target="_blank" class="link">
+          <a href="https://graysoncrozier.com" target="_blank" class="link">
             <div class="card shadow-xl border overflow-hidden">
               <img
                 alt="Screenshot of sculpta.art homepage"
                 class="aspect-[16/9]"
-                src="/images/tpg-studios.png"
+                src="/images/portfolio.png"
               />
             </div></a
           >
+        </div>
+        <div class="min-w-[270px] lg:min-w-[420px] flex mt-6 lg:mt-0">
+          <div class="my-auto">
+            <div class="px-4 text-lg md:text-xl">
+              <a href="https://graysoncrozier.com" class="" target="_blank">
+                Presenting a professional, <span
+                  class="underline decoration-secondary decoration-[3px]"
+                  >fully-customizable</span
+                > resume template designed to showcase the skills, experience, and
+                achievements of businesses and individuals.
+              </a>
+            </div>
+            <div class="px-4 mt-6 text-lg md:text-xl">
+              Visit our <a
+                href="https://graysoncrozier.com"
+                class="link font-bold"
+                target="_blank">webpage</a
+              > to explore this template and see how it can be tailored to your unique
+              career journey.
+            </div>
+            <div class="mt-4 text-large">
+              <a href="https://graysoncrozier.com" target="_blank">
+                <button class="btn btn-primary btn-wide mt-3"
+                  >See it in Action</button
+                >
+              </a>
+            </div>
+          </div>
         </div>
       </div>
     </div>
