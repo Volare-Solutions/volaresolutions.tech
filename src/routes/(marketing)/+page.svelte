@@ -87,18 +87,18 @@
     if (!isDeleting && letterIndex === currentWord.length) {
       setTimeout(() => {
         isDeleting = true
-      }, 3000)
+      }, 2000)
     } else if (isDeleting && letterIndex === 0) {
       wordIndex++
       isDeleting = false
       text = "\u00A0" // add a non-breaking space when the text is fully deleted
     }
 
-    setTimeout(typeWriter, isDeleting ? 150 : 200)
+    setTimeout(typeWriter, isDeleting ? 100 : 150)
   }
 
   onMount(() => {
-    setTimeout(typeWriter, 3000) // wait 3 seconds before starting the typewriter effect
+    setTimeout(typeWriter, 2000) // wait 3 seconds before starting the typewriter effect
   })
 </script>
 
@@ -120,7 +120,7 @@
         class="text-4xl md:text-6xl font-bold px-2"
         style="line-height: 1.2;"
       >
-        Powering Digital Transformation with
+        Powering Digital Transformation with <br />
         <span
           class="underline decoration-secondary decoration-4 md:decoration-[6px] typewriter"
         >
@@ -191,14 +191,10 @@
               {feature.description}
             </p>
             {#if feature.link}
-              <a
-                href={feature.link}
-                class="pb-4"
-                target={feature.newPage ? "_blank" : ""}
-              >
+              <a href={feature.link} class="pb-4">
                 <button
                   class="btn btn-xs btn-outline rounded-full btn-primary min-w-[100px]"
-                  >{feature.linkText ? feature.linkText : "Try It"}</button
+                  >Try It</button
                 >
               </a>
             {/if}
