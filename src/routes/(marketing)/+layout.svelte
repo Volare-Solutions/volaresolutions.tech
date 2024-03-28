@@ -1,5 +1,6 @@
 <script>
   import "../../app.css"
+  import { CircleUserRound } from "lucide-svelte"
 </script>
 
 <div class="navbar bg-base-100 container mx-auto">
@@ -8,9 +9,9 @@
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1 hidden sm:flex font-bold text-lg">
-      <li class="md:mx-2"><a href="/blog">Blog</a></li>
       <li class="md:mx-2"><a href="/pricing">Pricing</a></li>
-      <li class="md:mx-2"><a href="/account">Account</a></li>
+      <li class="md:mx-2"><a href="/about">About</a></li>
+      <li class="md:mx-2"><a href="/account"><CircleUserRound /></a></li>
     </ul>
     <div class="dropdown dropdown-end sm:hidden">
       <!-- svelte-ignore a11y-label-has-associated-control -->
@@ -54,22 +55,24 @@
   <footer class="footer p-10 text-base-content max-w-[1000px] mx-auto">
     <nav>
       <h6 class="footer-title">Services</h6>
-      <a href="/" class="link link-hover">Branding</a>
-      <a href="/" class="link link-hover">Design</a>
-      <a href="/" class="link link-hover">Marketing</a>
-      <a href="/" class="link link-hover">Advertisement</a>
+      <a href="/templates/portfolio" class="link link-hover"
+        >Portfolio Website</a
+      >
+      <a href="/templates/ecommerce" class="link link-hover"
+        >eCommerce Website</a
+      >
+      <!-- <a href="/digital-marketing" class="link link-hover">Digital Marketing</a> -->
     </nav>
     <nav>
       <h6 class="footer-title">Company</h6>
-      <a href="/" class="link link-hover">About us</a>
+      <a href="/about" class="link link-hover">About us</a>
       <a href="/contact_us" class="link link-hover">Contact</a>
-      <a href="/" class="link link-hover">Jobs</a>
     </nav>
     <nav>
       <h6 class="footer-title">Legal</h6>
-      <a href="/" class="link link-hover">Terms of use</a>
-      <a href="/" class="link link-hover">Privacy policy</a>
-      <a href="/" class="link link-hover">Cookie policy</a>
+      <a href="/legal/terms" class="link link-hover">Terms of use</a>
+      <a href="/legal/privacy" class="link link-hover">Privacy policy</a>
+      <a href="/legal/cookie" class="link link-hover">Cookie policy</a>
     </nav>
   </footer>
   <footer

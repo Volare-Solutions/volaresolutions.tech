@@ -1,5 +1,5 @@
 {
-	"name": "cmsassstarter",
+	"name": "volare-solutions",
 	"version": "0.0.1",
 	"private": true,
 	"scripts": {
@@ -41,6 +41,7 @@
 		"@supabase/auth-ui-shared": "^0.1.8",
 		"@supabase/auth-ui-svelte": "^0.2.2",
 		"@supabase/supabase-js": "^2.33.0",
+		"lucide-svelte": "^0.363.0",
 		"stripe": "^13.3.0"
 	},
 	"engines": {
