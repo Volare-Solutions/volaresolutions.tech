@@ -5,12 +5,18 @@
 
 <div class="navbar bg-base-100 container mx-auto">
   <div class="flex-1">
-    <a class="btn btn-ghost normal-case text-xl" href="/">Volare Solutions</a>
+    <a class="btn btn-ghost normal-case text-xl" href="/"
+      ><div
+        class="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
+      >
+        Volare Solutions
+      </div></a
+    >
   </div>
   <div class="flex-none">
     <ul class="menu menu-horizontal px-1 hidden sm:flex font-bold text-lg">
-      <li class="md:mx-2"><a href="/pricing">Pricing</a></li>
       <li class="md:mx-2"><a href="/about">About</a></li>
+      <li class="md:mx-2"><a href="/pricing">Pricing</a></li>
       <li class="md:mx-2"><a href="/account"><CircleUserRound /></a></li>
     </ul>
     <div class="dropdown dropdown-end sm:hidden">
@@ -36,7 +42,7 @@
         tabindex="0"
         class="menu menu-lg dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52 font-bold"
       >
-        <li><a href="/blog">Blog</a></li>
+        <li><a href="/about">About</a></li>
         <li><a href="/pricing">Pricing</a></li>
         <li><a href="/account">Account</a></li>
       </ul>

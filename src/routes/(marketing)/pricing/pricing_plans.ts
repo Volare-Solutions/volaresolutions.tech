@@ -39,13 +39,13 @@ export const pricingPlans = [
     name: "Enterprise Solutions",
     description:
       "Advanced IT solutions for enterprise needs, including full network setup and custom development.",
-    price: "Custom",
+    price: "",
     priceIntervalName: "Contact for pricing",
     stripe_price_id: "your_stripe_price_id_for_enterprise",
     stripe_product_id: "your_stripe_product_id_for_enterprise",
     features: [
       "Full network setup and management",
-      "Custom IT infrastructure development",
+      "Custom IT infrastructure",
       "High security and data protection",
       "Scalable data storage solutions",
       "24/7 technical support",

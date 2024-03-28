@@ -79,8 +79,8 @@
     <h2 class="text-2xl font-semibold mb-2">Contact Details</h2>
     <p class="mb-3">
       For any questions or inquiries, please contact us at: <a
-        href="mailto:contact@yourwebsite.com"
-        class="text-blue-600">contact@yourwebsite.com</a
+        href="mailto:contact@volaresolutions.tech"
+        class="text-blue-600">contact@volaresolutions.tech</a
       >.
     </p>
   </section>

@@ -95,12 +95,6 @@
   <div class="hero-content text-center py-12">
     <div class="max-w-xl">
       <div
-        class="text-xl md:text-3xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent mb-4 md:mb-8"
-      >
-        Volare Solutions
-      </div>
-
-      <div
         class="text-4xl md:text-6xl font-bold px-2"
         style="line-height: 1.2;"
       >
@@ -140,7 +134,7 @@
         <span
           class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
         >
-          fully functional demos
+          fully functional demos.
         </span>
       </div>
     </div>
@@ -347,7 +341,7 @@
       border-color: transparent;
     }
     50% {
-      border-color: forestgreen;
+      border-color: pink;
     }
   }
 </style>

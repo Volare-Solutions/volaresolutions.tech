@@ -21,14 +21,14 @@
     >
       <div class="flex flex-col h-full">
         <div class="text-xl font-bold">{plan.name}</div>
-        <p class="mt-2 text-sm text-gray-500 leading-relaxed">
+        <p class="mt-2 text-sm text-gray-400 leading-relaxed">
           {plan.description}
         </p>
-        <div class="mt-auto pt-4 text-sm text-gray-600">
-          Plan Includes:
+        <div class="mt-auto pt-4 text-sm">
+          <strong>Plan Includes:</strong>
           <ul class="list-disc list-inside mt-2 space-y-1">
             {#each plan.features as feature}
-              <li class="">{feature}</li>
+              <li class="text-gray-400">{feature}</li>
             {/each}
             <ul></ul>
           </ul>
@@ -41,7 +41,7 @@
               <div
                 class="btn btn-outline btn-success no-animation w-[80%] mx-auto cursor-default"
               >
-                Current Planx
+                Current Plan
               </div>
             {:else if plan.id === "enterprise"}
               <a href={"/contact_us"} class="btn btn-primary w-[80%] mx-auto">
