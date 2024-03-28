@@ -6,51 +6,6 @@
   export let callToAction: string
   export let currentPlanId: string = ""
   export let center = true
-
-  type PlanFeatureRow = {
-    name: string
-    freeIncluded?: boolean
-    proIncluded?: boolean
-    freeString?: string
-    proString?: string
-    header?: boolean
-  }
-
-  const planFeatures: PlanFeatureRow[] = [
-    {
-      name: "Section 1",
-      header: true,
-    },
-    {
-      name: "Feature 1",
-      freeIncluded: true,
-      proIncluded: true,
-    },
-    {
-      name: "Feature 2",
-      freeIncluded: false,
-      proIncluded: true,
-    },
-    {
-      name: "Feature 3",
-      freeString: "3",
-      proString: "Unlimited",
-    },
-    {
-      name: "Section 2",
-      header: true,
-    },
-    {
-      name: "Feature 4",
-      freeIncluded: true,
-      proIncluded: true,
-    },
-    {
-      name: "Feature 5",
-      freeIncluded: false,
-      proIncluded: true,
-    },
-  ]
 </script>
 
 <div
@@ -86,8 +41,12 @@
               <div
                 class="btn btn-outline btn-success no-animation w-[80%] mx-auto cursor-default"
               >
-                Current Plan
+                Current Planx
               </div>
+            {:else if plan.id === "enterprise"}
+              <a href={"/contact_us"} class="btn btn-primary w-[80%] mx-auto">
+                {callToAction}
+              </a>
             {:else}
               <a
                 href={"/account/subscribe/" +
@@ -110,47 +69,54 @@
     <div class="collapse collapse-arrow join-item border border-primary">
       <input type="radio" name="faq-accordion" />
       <div class="collapse-title text-lg font-medium">
-        Is this template free to use?
-      </div>
-      <div class="collapse-content">
-        <p>Yup! This template is free to use for any project.</p>
-      </div>
-    </div>
-    <div class="collapse collapse-arrow join-item border border-primary">
-      <input type="radio" name="faq-accordion" />
-      <div class="collapse-title text-lg font-medium">
-        Why does a free template have a pricing page?
+        Are your pricing plans flexible?
       </div>
       <div class="collapse-content">
         <p>
-          The pricing page is part of the boilerplate. It shows how the pricing
-          page integrates into the billing portal and the Stripe Checkout flows.
+          Absolutely! We understand that every business has unique needs, which
+          is why we offer customizable pricing plans. We're always open to
+          discuss how we can tailor our services to fit your budget and
+          requirements.
         </p>
       </div>
     </div>
     <div class="collapse collapse-arrow join-item border border-primary">
       <input type="radio" name="faq-accordion" />
       <div class="collapse-title text-lg font-medium">
-        What license is the template under?
+        What's included in the website design and hosting package?
       </div>
       <div class="collapse-content">
-        <p>The template is under the MIT license.</p>
+        <p>
+          Our website design and hosting package includes a fully customizable
+          CMS, hosting services, and a responsive design. This package is
+          perfect for both business and personal portfolio websites.
+        </p>
       </div>
     </div>
     <div class="collapse collapse-arrow join-item border border-primary">
       <input type="radio" name="faq-accordion" />
       <div class="collapse-title text-lg font-medium">
-        Can I try out purchase flows without real a credit card?
+        Can I upgrade my plan later?
       </div>
       <div class="collapse-content">
         <p>
-          Our demo page <a href="https://saasstarter.work" class="link"
-            >SaasStarter.work</a
-          > has a functional demo page, using Stripe's test environment.
+          Yes, you can upgrade your plan at any time. Our scalable solutions are
+          designed to grow with your business. Feel free to reach out to us to
+          discuss upgrading your current plan.
         </p>
-        <p class="mt-4">
-          You can use the credit card number 4242 4242 4242 4242 with any future
-          expiry date to test the payment and upgrade flows.
+      </div>
+    </div>
+    <div class="collapse collapse-arrow join-item border border-primary">
+      <input type="radio" name="faq-accordion" />
+      <div class="collapse-title text-lg font-medium">
+        How does the eCommerce solution integrate with Stripe for payments?
+      </div>
+      <div class="collapse-content">
+        <p>
+          Our eCommerce solution seamlessly integrates with Stripe for payments,
+          including setup and configuration. We provide a secure and streamlined
+          checkout experience, supporting various payment methods to cater to
+          your customers' preferences.
         </p>
       </div>
     </div>
@@ -183,73 +149,3 @@
     </symbol>
   </defs>
 </svg>
-
-<h1 class="text-2xl font-bold text-center mt-16">Plan Features</h1>
-<h2 class="text-xl text-center text-slate-500 mt-1 pb-3">
-  Example feature table
-</h2>
-
-<div class="overflow-visible mx-auto max-w-xl mt-4">
-  <table class="table">
-    <thead
-      class="text-lg sticky top-0 bg-base-100 bg-opacity-50 z-10 backdrop-blur"
-    >
-      <tr>
-        <th></th>
-        <th class="text-center">Free</th>
-        <th class="text-center">Pro</th>
-      </tr>
-    </thead>
-    <tbody>
-      {#each planFeatures as feature}
-        {#if feature.header}
-          <tr class="bg-base-200 font-bold">
-            <td colspan="3">{feature.name} </td>
-          </tr>
-        {:else}
-          <tr class="relative">
-            <td>{feature.name} </td>
-            <td class="text-center">
-              {#if feature.freeString}
-                {feature.freeString}
-              {:else if feature.freeIncluded}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 ml-2 inline text-success"
-                >
-                  <use href="#checkcircle" />
-                </svg>
-              {:else}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-[26px] h-[26px] inline text-base-200"
-                >
-                  <use href="#nocircle" />
-                </svg>
-              {/if}
-            </td>
-            <td class="text-center">
-              {#if feature.proString}
-                {feature.proString}
-              {:else if feature.proIncluded}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-8 h-8 ml-2 inline text-success"
-                >
-                  <use href="#checkcircle" />
-                </svg>
-              {:else}
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  class="w-[26px] h-[26px] inline text-base-200"
-                >
-                  <use href="#nocircle" />
-                </svg>
-              {/if}
-            </td>
-          </tr>
-        {/if}
-      {/each}
-    </tbody>
-  </table>
-</div>

@@ -1,43 +1,54 @@
-export const defaultPlanId = "free"
+export const defaultPlanId = "basic";
 
 export const pricingPlans = [
   {
-    id: "free",
-    name: "Free",
-    description: "A free plan to get you started!",
-    price: "$0",
-    priceIntervalName: "per month",
-    stripe_price_id: null,
-    features: ["MIT Licence", "Fast Performance", "Stripe Integration"],
+    id: "basic",
+    name: "Portfolio Website",
+    description:
+      "A fully customizable CMS portfolio website for businesses or personal use, including design and hosting.",
+    price: "$499",
+    priceIntervalName: "one-time",
+    stripe_price_id: "your_stripe_price_id_for_basic",
+    stripe_product_id: "your_stripe_product_id_for_basic",
+    features: [
+      "Custom website design",
+      "Hosting with CMS integration",
+      "Full content management system",
+      "Responsive design for all devices",
+    ],
   },
   {
-    id: "pro",
-    name: "Pro",
+    id: "ecommerce",
+    name: "Ecommerce Solution",
     description:
-      "A plan to test the purchase experience. Try buying this with the test credit card 4242424242424242.",
-    price: "$5",
-    priceIntervalName: "per month",
-    stripe_price_id: "price_1OwvpWGq88MAyKwhh6rc0er1",
-    stripe_product_id: "prod_PmUpuBHgXAl3jr",
+      "A comprehensive eCommerce solution with CMS, Stripe payments setup, design, hosting, and more.",
+    price: "$999",
+    priceIntervalName: "one-time",
+    stripe_price_id: "your_stripe_price_id_for_ecommerce",
+    stripe_product_id: "your_stripe_product_id_for_ecommerce",
     features: [
-      "Everything in Free",
-      "Support us with fake money",
-      "Test the purchase experience",
+      "Stripe setup for payments",
+      "Custom eCommerce website design",
+      "Hosting with CMS integration",
+      "Data storage and email services",
+      "Image hosting",
     ],
   },
   {
     id: "enterprise",
-    name: "Enterprise",
+    name: "Enterprise Solutions",
     description:
-      "A plan to test the upgrade expereince. Try buying this with the test credit card 4242424242424242.",
-    price: "$15",
-    priceIntervalName: "per month",
-    stripe_price_id: "price_1OwvpxGq88MAyKwhzyoiuJpw",
-    stripe_product_id: "prod_PmUpEF0t9X9KZ5",
+      "Advanced IT solutions for enterprise needs, including full network setup and custom development.",
+    price: "Custom",
+    priceIntervalName: "Contact for pricing",
+    stripe_price_id: "your_stripe_price_id_for_enterprise",
+    stripe_product_id: "your_stripe_product_id_for_enterprise",
     features: [
-      "Everything in Pro",
-      "Try the 'upgrade plan' UX",
-      "Still actually free!",
+      "Full network setup and management",
+      "Custom IT infrastructure development",
+      "High security and data protection",
+      "Scalable data storage solutions",
+      "24/7 technical support",
     ],
   },
-]
+];
