@@ -129,12 +129,14 @@
         Explore our Services
       </div>
       <div class="mt-6 text-xl font-bold">
-        And try them with these
-        <span
-          class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
-        >
-          fully functional demos.
-        </span>
+        And try them out with
+        <a href="/templates">
+          <span
+            class="underline decoration-secondary decoration-[3px] md:decoration-[4px]"
+          >
+            fully functional demos.
+          </span>
+        </a>
       </div>
     </div>
 
