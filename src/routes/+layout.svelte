@@ -3,6 +3,9 @@
   import { navigating } from "$app/stores"
   import { expoOut } from "svelte/easing"
   import { slide } from "svelte/transition"
+  import { inject } from "@vercel/analytics"
+
+  inject()
 </script>
 
 {#if $navigating}
