@@ -18,7 +18,7 @@
       name: "Ecommerce Solutions",
       link: "/templates/ecommerce",
       description:
-        "Launch your online store with our fully customizable ecommerce templates, offering CMS for complete control over your content.",
+        "Launch your online store with our fully customizable ecommerce templates.",
       svgContent: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <path stroke-width="2" d="M3 3h7l1 5h8l2 9H5"></path>
   <circle cx="7" cy="20" r="2" stroke-width="2"></circle>
@@ -29,8 +29,7 @@
     {
       name: "Portfolio Templates",
       link: "/templates/portfolio",
-      description:
-        "Showcase your work with our dynamic portfolio templates, offering CMS for complete control over your content.",
+      description: "Showcase your work with our dynamic portfolio templates.",
       svgContent: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <rect x="2" y="7" width="20" height="14" rx="2" ry="2" stroke-width="2"></rect>
   <path stroke-width="2" d="M2 3h20v4H2z"></path>
@@ -41,7 +40,7 @@
       name: "Template Gallery",
       link: "/templates",
       description:
-        "Explore a variety of customizable website templates, complete with an admin portal for full content management.",
+        "Explore a variety of customizable website templates, each comes complete with an admin portal for full content management.",
       svgContent: `<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="none" viewBox="0 0 24 24" stroke="currentColor">
   <rect x="3" y="3" width="7" height="7" stroke-width="2" rx="1"></rect>
   <rect x="14" y="3" width="7" height="7" stroke-width="2" rx="1"></rect>
@@ -91,7 +90,7 @@
   <meta name="description" content="{WebsiteName} Home Page" />
 </svelte:head>
 
-<div class="hero min-h-[60vh]">
+<div class="hero min-h-[60vh] mt-24">
   <div class="hero-content text-center py-12">
     <div class="max-w-xl">
       <div
