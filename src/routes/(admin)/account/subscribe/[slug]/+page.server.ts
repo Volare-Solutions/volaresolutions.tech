@@ -51,7 +51,7 @@ export const load: PageServerLoad = async ({
         },
       ],
       customer: customerId,
-      mode: "subscription",
+      mode: "payment",
       success_url: `${url.origin}/account`,
       cancel_url: `${url.origin}/account/billing`,
     })
@@ -59,7 +59,7 @@ export const load: PageServerLoad = async ({
   } catch (e) {
     throw error(
       500,
-      "Unknown Error (SSE): If issue persists please contact us.",
+      `Unknown Error (SSE): If issue persists please contact us.\n${e}`,
     )
   }
 
