@@ -80,27 +80,6 @@
     <h2 class="text-4xl font-bold mb-4">
       <span
         class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
-        >The Founder</span
-      >
-    </h2>
-    <p class="text-xl">
-      With a passion for technology and a deep commitment to helping businesses
-      thrive, Grayson Crozier founded Volare Solutions to bridge the gap between
-      companies and their potential in the digital world. Grayson's approach is
-      rooted in a belief that technology should empower businesses, not encumber
-      them. Through Volare Solutions, he offers not just services but
-      partnerships to navigate the digital challenges and opportunities
-      together.
-    </p>
-  </div>
-
-  <div class="divider"></div>
-  <!-- DaisyUI Divider -->
-
-  <div class="my-12">
-    <h2 class="text-4xl font-bold mb-4">
-      <span
-        class="font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
         >Why Choose Us?</span
       >
     </h2>
