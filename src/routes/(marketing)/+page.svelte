@@ -120,7 +120,7 @@
     </div>
   </div>
 </div>
-<div class="min-h-[60vh]">
+<div class="min-h-[60vh] mb-24">
   <div class="pt-20 pb-8 px-7">
     <div class="max-w-lg mx-auto text-center">
       <div
@@ -181,7 +181,8 @@
     </div>
   </div>
 </div>
-<div class="hero min-h-[60vh] mt-12">
+
+<!-- <div class="hero min-h-[60vh] mt-12">
   <div class="hero-content text-center pb-16 pt-4 px-4">
     <div class="max-w-lg">
       <div
@@ -315,7 +316,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <style>
   .typewriter {
