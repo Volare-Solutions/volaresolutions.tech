@@ -70,7 +70,7 @@
     if (!isDeleting && letterIndex === currentWord.length) {
       setTimeout(() => {
         isDeleting = true
-      }, 2000)
+      }, 3000)
     } else if (isDeleting && letterIndex === 0) {
       wordIndex++
       isDeleting = false
@@ -81,7 +81,7 @@
   }
 
   onMount(() => {
-    setTimeout(typeWriter, 2000) // wait 3 seconds before starting the typewriter effect
+    setTimeout(typeWriter, 3000) // wait 3 seconds before starting the typewriter effect
   })
 </script>
 
@@ -90,9 +90,14 @@
   <meta name="description" content="{WebsiteName} Home Page" />
 </svelte:head>
 
-<div class="hero min-h-[60vh] mt-24">
+<div class="hero min-h-[60vh] mt-20">
   <div class="hero-content text-center py-12">
     <div class="max-w-xl">
+      <div
+        class="text-3xl md:text-4xl font-bold bg-clip-text text-transparent bg-gradient-to-r from-primary to-accent"
+      >
+        Volare Solutions
+      </div>
       <div
         class="text-4xl md:text-6xl font-bold px-2"
         style="line-height: 1.2;"
@@ -120,7 +125,7 @@
     </div>
   </div>
 </div>
-<div class="min-h-[60vh]">
+<div class="min-h-[60vh] mb-24">
   <div class="pt-20 pb-8 px-7">
     <div class="max-w-lg mx-auto text-center">
       <div
@@ -181,7 +186,8 @@
     </div>
   </div>
 </div>
-<div class="hero min-h-[60vh] mt-12">
+
+<!-- <div class="hero min-h-[60vh] mt-12">
   <div class="hero-content text-center pb-16 pt-4 px-4">
     <div class="max-w-lg">
       <div
@@ -315,7 +321,7 @@
       </div>
     </div>
   </div>
-</div>
+</div> -->
 
 <style>
   .typewriter {
