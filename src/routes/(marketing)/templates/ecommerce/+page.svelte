@@ -1,4 +1,12 @@
 <script lang="ts">
+  import {
+    Palette,
+    Globe,
+    Mail,
+    BookOpen,
+    Smartphone,
+    Landmark,
+  } from "lucide-svelte"
   import { onMount } from "svelte"
 
   let activeTab = "Mobile"
@@ -9,12 +17,12 @@
   let displayDateRange = `${firstOfCurrentMonth.toLocaleDateString("en-US", { month: "long", day: "numeric" })} - ${now.toLocaleDateString("en-US", { month: "long", day: "numeric" })}`
 
   const ecommerceFeatures = [
-    "💳 Stripe fully integrated for payments",
-    "📧 Email notifications system for marketing and invoicing",
-    "📈 Fully manageable CMS and CRM built-in as admin panel",
-    "🔄 Real-time stock availability updates",
-    "📱 Optimized for mobile and desktop",
-    "📬 All email services, including email marketing, are included",
+    { icon: Palette, text: "Custom website design" },
+    { icon: Landmark, text: "Stripe fully integrated for payments" },
+    { icon: Globe, text: "Reliable and secure hosting" },
+    { icon: BookOpen, text: "Fully manageable CMS and CRM" },
+    { icon: Mail, text: "Email notification system" },
+    { icon: Smartphone, text: "Responsive design for all devices" },
   ]
 
   function switchTab(tab: string) {
@@ -27,7 +35,7 @@
 </script>
 
 <svelte:head>
-  <title>Ecommerce Templates</title>
+  <title>Ecommerce Features</title>
 </svelte:head>
 <div
   class="flex flex-col md:flex-row justify-between max-w-[1000px] mx-auto mt-4 md:mt-20 p-4 md:p-0"
@@ -41,9 +49,12 @@
       </div>
     </div>
   </div>
-  <div class="flex flex-col space-y-4">
+  <div class="flex flex-col space-y-8 m-4">
     {#each ecommerceFeatures as feature}
-      <p>{feature}</p>
+      <p class="flex items-center">
+        <svelte:component this={feature.icon} class="text-secondary mr-4" />
+        {feature.text}
+      </p>
     {/each}
   </div>
 </div>
@@ -60,13 +71,13 @@
 
     <div class="stat space-y-2">
       <div class="stat-title">Website Views</div>
-      <div class="stat-value text-secondary">420</div>
+      <div class="stat-value">420</div>
       <div class="stat-desc">↗︎ 420 (22%)</div>
     </div>
 
     <div class="stat space-y-2">
       <div class="stat-title">Templates</div>
-      <div class="stat-value">3</div>
+      <div class="stat-value">1</div>
       <div class="stat-desc">Fully Customizable</div>
     </div>
   </div>
@@ -114,7 +125,3 @@
     </div>
   {/if}
 </div>
-
-<style>
-  /* Additional styles can be added here if needed */
-</style>
