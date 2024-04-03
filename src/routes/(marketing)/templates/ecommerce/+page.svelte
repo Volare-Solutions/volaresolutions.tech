@@ -62,7 +62,7 @@
 <div
   class="flex flex-col items-center justify-center max-w-[1000px] mx-auto m-20"
 >
-  <div class="stats stats-horizontal shadow">
+  <div class="stats stats-vertical lg:stats-horizontal shadow">
     <div class="stat space-y-2">
       <div class="stat-title">Transactions</div>
       <div class="stat-value">69</div>
